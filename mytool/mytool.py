@@ -13,9 +13,9 @@ def main():
 def handleFile(source, destination, format):
     if (format != "text") and (format != "json"):
         print("Error in format choice, choose either json or text.")
-    checktype = os.path.splitext(source)[1].lower()
-    if (checktype != ".log"):
-        print("Error in input file extension, only .log files are allowed.")
+    checkexists = os.path.isfile(source)
+    if not checkexists:
+        print("Error in input file, file does not exist.")
     else:
         form = ".txt" if (format == "text") else ".json"
         dest = destination if destination is not None else os.path.splitext(source)[0].lower() + form
