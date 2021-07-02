@@ -12,3 +12,5 @@ Untuk panduan penggunaan, masukkan command berikut.
 Secara umum, format command penggunaan adalah sebagai berikut.
 
 `mytool file input [-t FORMAT (text/json)] [-o FILE DESTINASI]`
+
+File Linux_2k.log dapat digunakan untuk mengetes.
